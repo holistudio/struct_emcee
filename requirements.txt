@@ -1,0 +1,5 @@
+scipy
+matplotlib
+pymc # best via conda install
+ipykernel
+ipywidgets
