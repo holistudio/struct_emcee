@@ -1,0 +1,24 @@
+{
+  "lines.linewidth": 2.0,
+  "axes.edgecolor": "#bcbcbc",
+  "patch.linewidth": 0.5,
+  "legend.fancybox": true,
+  "axes.prop_cycle_colors": [
+    "#348ABD",
+    "#A60628",
+    "#7A68A6",
+    "#467821",
+    "#CF4457",
+    "#188487",
+    "#E24A33"
+  ],
+  "axes.facecolor": "#f5f5f5",
+  "axes.labelsize": "medium",
+  "axes.grid": true,
+  "axes.titleweight": "normal",
+  "grid.linestyle": "--",
+  "grid.color": "#bcbcbc",
+  "patch.edgecolor": "#f5f5f5",
+  "axes.titlesize": "x-large",
+  "svg.fonttype": "path"
+}
