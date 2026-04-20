@@ -1,13 +1,19 @@
 {
   "material": {
     "name": "Douglas Fir-Larch, Select Structural Grade",
-    "allowable_bending_stress_MPa": 10.3,
-    "allowable_shear_stress_MPa": 1.17,
-    "modulus_of_elasticity_GPa": 11.0
+    "reference_bending_stress_MPa": 10.3,
+    "reference_shear_stress_MPa": 1.17,
+    "modulus_of_elasticity_GPa": 11.0,
+    "modulus_of_elasticity_min_MPa": 4000.0,
+    "density_kg_per_m3": 500.0
   },
   "geometry": {
-    "width_mm": 89,
-    "height_mm": 235,
+    "_comment_nominal": "Nominal size in inches (used for CF size factor lookup)",
+    "nominal_width_in": 4,
+    "nominal_depth_in": 10,
+    "_comment_actual": "Actual dressed dimensions in mm (used in all calculations)",
+    "actual_width_mm": 89,
+    "actual_height_mm": 235,
     "length_mm": 1500
   },
   "loading": {
@@ -15,5 +21,24 @@
   },
   "serviceability": {
     "allowable_deflection": "l/240"
+  },
+  "adjustment_factors": {
+    "_comment": "User-specified NDS adjustment factors. CF (size factor) is auto-computed from nominal depth.",
+    "CD": {
+      "value": 1.0,
+      "description": "Load Duration Factor — 1.0 = normal (10-yr live load); 0.9 = permanent dead; 1.15 = snow; 1.25 = construction; 1.6 = wind/seismic"
+    },
+    "CM": {
+      "value": 1.0,
+      "description": "Wet Service Factor — 1.0 = dry (MC <= 19%); 0.85 = wet service for Fb; 0.97 = wet for Fv; 0.90 = wet for E"
+    },
+    "Ct": {
+      "value": 1.0,
+      "description": "Temperature Factor — 1.0 = normal (<= 38°C); 0.8 = elevated 38-52°C (Fb); 0.7 = elevated 52-65°C (Fb)"
+    },
+    "Cr": {
+      "value": 1.0,
+      "description": "Repetitive Member Factor — 1.0 = single/isolated member; 1.15 = repetitive system (>= 3 members, <= 600mm spacing, with sheathing)"
+    }
   }
 }
