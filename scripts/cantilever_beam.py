@@ -121,6 +121,9 @@ def compute_reactions(F_N: float, L_mm: float) -> dict:
     M_wall  = F_N * L_mm            # moment reaction = F × full span length
     return {"R_y_N": R_y, "M_wall_Nmm": M_wall}
 
+# ---------------------------------------------------------------------------
+# Stress and deflection demand calculations
+# ---------------------------------------------------------------------------
 
 def compute_max_flexural_stress(M_max_Nmm: float, S_mm3: float) -> float:
     """
