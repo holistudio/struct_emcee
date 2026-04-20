@@ -1,0 +1,19 @@
+{
+  "material": {
+    "name": "Douglas Fir-Larch, Select Structural Grade",
+    "allowable_bending_stress_MPa": 10.3,
+    "allowable_shear_stress_MPa": 1.17,
+    "modulus_of_elasticity_GPa": 11.0
+  },
+  "geometry": {
+    "width_mm": 89,
+    "height_mm": 235,
+    "length_mm": 1500
+  },
+  "loading": {
+    "point_load_kN": 2.0
+  },
+  "serviceability": {
+    "allowable_deflection": "l/240"
+  }
+}
