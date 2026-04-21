@@ -1,5 +1,8 @@
 scipy
 matplotlib
-pymc # best via conda install
+seaborn
+# sudo apt-get install libhdf5-dev libnetcdf-dev  
+pymc==3.8 # best via conda install
+arviz==0.11.0
 ipykernel
 ipywidgets
