@@ -1,3 +1,5 @@
 # struct_emcee
 
-structural design with Monte Carlo Markov Chains
+Learning about Bayesian Monte Carlo Markov Chains methods via structural design exploration problems.
+
+Latest: Wood cantilever beam design [notebook](./notebooks/cantilever_mcmc.ipynb)
